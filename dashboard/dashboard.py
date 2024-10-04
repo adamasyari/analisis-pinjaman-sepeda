@@ -5,7 +5,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-merged_df = pd.read_csv('D:/MBKM/HomeWork/analisis_data/Submission/dashboard/all_data.csv')
+merged_df = pd.read_csv('dashboard/all_data.csv')
 
 st.header("Peminjaman Sepeda")
 st.title('Tren Musiman Peminjaman Sepeda')
