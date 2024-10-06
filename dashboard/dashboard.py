@@ -48,7 +48,7 @@ hourly_rentals = merged_df.groupby('hr')['total_rentals'].sum().reset_index()
 
 st.subheader('Jumlah Peminjaman Sepeda per Jam')
 plt.figure(figsize=(12, 6))
-sns.barplot(x='hr', y='total_rentals', data=hourly_rentals)
+sns.barplot(x='hr', y='total_rentals', data=hourly_rentals, palette='Set1')
 plt.title('Jumlah Peminjaman Sepeda per Jam')
 plt.xlabel('Jam (0-23)')
 plt.ylabel('Total Peminjaman Sepeda')
