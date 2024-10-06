@@ -17,11 +17,11 @@ seasonal_trends = merged_df.groupby(['season_day', 'yr_day'])[['casual_day', 're
 
 plt.figure(figsize=(12, 6))
 plt.subplot(1, 2, 1)
-sns.boxplot(x='season_day', y='casual_day', data=merged_df, palette='Set2')
+sns.barplot(x='season_day', y='casual_day', data=merged_df, palette='Set2')
 plt.title('Jumlah Peminjaman Casual Berdasarkan Musim')
 
 plt.subplot(1, 2, 2)
-sns.boxplot(x='season_day', y='registered_day', data=merged_df, palette='Set3')
+sns.barplot(x='season_day', y='registered_day', data=merged_df, palette='Set3')
 plt.title('Jumlah Peminjaman Registered Berdasarkan Musim')
 
 plt.tight_layout()
